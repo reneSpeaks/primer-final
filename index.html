@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Primer Final</title>
+        <title>Primer Final</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body></body>
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- FONT AWESOME ICONS LINK INCLUDE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <nav>
+                    <div class="quicklinks">
+                        <a href="tel:+"><i class="fa-solid fa-phone"></i> +49 800 ARTINIA</a>
+                    </div>
+
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-mountain-sun"></i> Artinia<span> Adventures</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="#">DESTINATIONS</a></li>
+                        <li>|</li>
+                        <li><a href="#">ADVENTURES</a></li>
+                        <li>|</li>
+                        <li><a href="#">PLANS</a></li>
+                    </ul>
+
+                    <div class="search-field">
+                        <input type="search" id="search" name="search" minlength="4" />
+                        <label for="search">Search</label>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="carousel">
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="slide-btn-1"
+                        class="class-btn"
+                        onclick="setSlide();"
+                        checked />
+                    <input type="radio" name="carousel" id="slide-btn-2" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-3" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-4" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-5" class="class-btn" onclick="setSlide();" />
+
+                    <div class="slide one parallax-effect">
+                        <h1>Guiding Life's<br />Greatest Adventures</h1>
+                    </div>
+                    <div class="slide two parallax-effect">
+                        <h1>Find Your Bliss<br />in Solo Exploration</h1>
+                    </div>
+                    <div class="slide three parallax-effect">
+                        <h1>Chart Your<br />Own Course</h1>
+                    </div>
+                    <div class="slide four parallax-effect">
+                        <h1>Adventure<br />Begins Here</h1>
+                    </div>
+                    <div class="slide five parallax-effect">
+                        <h1>Let us be your<br />passport to the world.</h1>
+                    </div>
+
+                    <div class="labels">
+                        <label for="slide-btn-1"></label>
+                        <label for="slide-btn-2"></label>
+                        <label for="slide-btn-3"></label>
+                        <label for="slide-btn-4"></label>
+                        <label for="slide-btn-5"></label>
+                    </div>
+                </div>
+            </section>
+            <section></section>
+        </main>
+        <footer></footer>
+
+        <script type="text/javascript" src="js/scripts.js" defer></script>
+    </body>
 </html>
