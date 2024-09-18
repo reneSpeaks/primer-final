@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap);
 :root {
   --primaryColor: #dfa944;
   --secondarycolor: #32a287;
@@ -36,28 +37,29 @@ header {
   align-items: center;
   width: 100%;
 }
-.header-wrapper .quicklinks {
-  max-width: 1200px;
-  width: 100%;
-  text-align: right;
-}
-.header-wrapper .quicklinks a {
-  color: #181818;
-  text-decoration: none;
-  transition: 0.2s ease;
-  font-size: 0.7rem;
-}
-.header-wrapper .quicklinks a:hover {
-  color: #32a287;
-}
 
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #181818;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  box-shadow: 3px 3px 10px lightslategray;
+}
+nav .quicklinks {
+  position: absolute;
+  padding-right: 20px;
+  right: 0px;
+  top: -2px;
+}
+nav .quicklinks a {
+  font-size: 0.7rem;
 }
 nav a {
   color: #181818;
@@ -91,7 +93,7 @@ nav .search-field input {
   font-size: 0.95rem;
   text-align: right;
   outline: none;
-  border-radius: 5px;
+  border-radius: 15px;
   border: 2px solid #181818;
 }
 nav .search-field input:focus {
@@ -118,9 +120,17 @@ nav .search-field label {
 .carousel {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
   background-color: #32a287;
+}
+.carousel h1 {
+  font-family: "Dancing Script", cursive;
+  color: #181818;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 10vmin;
+  -webkit-text-stroke: 1px #fcfcfc;
 }
 .carousel .slide {
   text-decoration: none;
@@ -132,6 +142,9 @@ nav .search-field label {
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .carousel .slide > * {
   transition: transform 0.15s ease;
@@ -157,7 +170,7 @@ nav .search-field label {
 .carousel .three,
 .carousel .four,
 .carousel .five {
-  background-position: center center;
+  background-position: center;
   background-size: cover;
 }
 .carousel .one {
@@ -206,6 +219,7 @@ main {
 }
 
 #hero {
-  height: 100%;
+  height: 75vh;
+  height: 75svh;
   width: 100%;
 }

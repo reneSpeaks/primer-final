@@ -14,6 +14,6 @@ function setSlide() {
                 return;
             }
         }
-    }, 5000);
+    }, 10000);
 }
 setSlide();
