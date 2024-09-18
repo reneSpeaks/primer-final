@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap);@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 :root {
   --primaryColor: #dfa944;
   --secondarycolor: #32a287;
@@ -222,13 +223,40 @@ main {
   height: 75vh;
   height: 75svh;
   width: 100%;
-}.Adventures_Destinations{
-    margin: 30px;
 }
-.Adventures h2, .Destinations h2{
-    text-align: left;
-    font-weight: 500;
-    margin: 20px 0px 10px 0px;
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+    background-color: var(--primaryColor);
+    color: var(--lightBackgroundColor);
+}
+button {
+    padding: 10px 20px;
+    background-color: var(--secondarycolor);
+    color: var(--lightBackgroundColor);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color:var(--secondarycolor);
+}
+
+.Adventures_Destinations{
+    margin: 30px;
 }
 .Adventures_Destinations h3{
     text-align: center;
@@ -238,23 +266,28 @@ main {
 .Adventures_Destinations h1{
     text-align: center;
 }
+.Adventures h2, .Destinations h2{
+    text-align: left;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+}
 .adventure-flex{
     display: flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
 }
-.adventure-item, .destination-item{
-  position: relative;
-  height: 400px;
-  width: 100%;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; 
-  border-radius: 5px;
-  overflow: hidden;
-}
+.adventure-item, .destination-item1, .destination-item2, .destination-item3, .destination-item4, .destination-item5, .destination-item6, .destination-item7 {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 5px;
+    overflow: hidden;
+  }  
 .overlay {
     position: absolute;
     top: 0;
@@ -267,22 +300,28 @@ main {
     flex-direction: column;
     color: var(--lightBackgroundColor);
 }
-.adventure-item h2, .destination-item h2{
+.overlay h2{
     font-family: "Caveat", cursive;
     margin-bottom: 30px;
+    font-size: 30px;
 }
-.adventure-flex a , .destination-grid a{
+.overlay h3{
+    font-family: "Caveat", cursive;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.overlay a{
     color: var(--lightBackgroundColor);
     text-decoration: none;
     font-size: 12px;
     background-color: transparent;
     padding: 5px;
     border-radius: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
 }
 
-.adventure-flex a:hover , .destination-grid a:hover{
+.overlay a:hover{
     color: var(--lightBackgroundColor);
     text-decoration: none;
     font-size: 12px;
@@ -290,8 +329,23 @@ main {
     padding: 5px;
     border-radius: 20px;
 }
-.adventure-item:hover a , .destination-item:hover a {
+.overlay:hover a {
     opacity: 1; 
     border: 2px solid var(--lightBackgroundColor);
-
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.destination-item1:hover,.destination-item2:hover, .destination-item3:hover, 
+.destination-item4:hover, .destination-item5:hover, .destination-item6:hover, .destination-item7:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.destination-item1 {
+    grid-area: 1 /1 / span 2/ span 2;
+    background-size: cover;
+    width: 100%; 
+    height: 100%; 
 }
