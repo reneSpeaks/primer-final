@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 :root {
     --primaryColor: #dfa944;
     --secondarycolor: #32a287;
@@ -13,4 +13,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+.Adventures_Destinations h3{
+    text-align: center;
+    font-weight: 500;
+}
+.Adventures_Destinations h1{
+    text-align: center;
+}
+.Adventures h2, .Destinations h2{
+    text-align: left;
+}
+.adventure-flex{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+.adventure-item{
+   
+    background-size: cover;
+    width: 19%;
+}
+.adventure-item h2{
+    font-family: "Caveat", cursive;
+}
+.adventure-flex a{
+    color: var(--lightBackgroundColor);
+    text-decoration: none;
+    font-size: 10px;
+    border: #dc1919;
 }
