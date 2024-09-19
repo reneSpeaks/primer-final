@@ -400,3 +400,27 @@ main {
     width: 100%; 
     height: 100%; 
 }
+.Winner-Logo{
+display: flex;
+justify-content: space-around;
+}
+.Winner-Logo div{
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+.Winner-Logo .logo1{
+  background-image: url(../img/2019.jpg);
+}
+.Winner-Logo .logo2{
+  background-image: url(../img/Top-Travel-Specialists-US-Logo-2024.png);
+}
+.Winner-Logo .logo3{
+  background-image: url(../img/travel-best-awards-2018.png);
+}
+.Winner-Logo .logo4{
+  background-image: url(../img/2022-winners-shield-M.png);
+}
+.Winner-Logo .logo5{
+  background-image: url(../img/50-Tours-2013-logo-web.png);
+}
