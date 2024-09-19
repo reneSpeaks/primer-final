@@ -224,12 +224,20 @@ main {
   height: 75svh;
   width: 100%;
 }
+.Find{
+background-color: var(--darkBackgroundColor);
+padding: 30px;
+}
 .dropdown-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
     margin: 20px;
+}
+legend{
+  text-align: center;
+  color: var(--lightBackgroundColor);
 }
 select {
     padding: 10px;
