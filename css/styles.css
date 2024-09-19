@@ -15,6 +15,30 @@
   font-family: "Poppins", sans-serif;
 }
 
+#footerbcg {display:block; width:100%; height:400px; background-color:black; margin-left:0px; margin-bottom:0px;
+}
+
+#footer {width:1200px; height:400px; background-color:black; display:block;color:white; margin-left:auto; margin-right:auto; margin-top:800px; position:relevant;
+}
+
+#footer p {position:absolute; display:block; margin-left:280px; text-align:center; margin-top:290px; 
+}
+
+#footer img { width:250px; height:167px; border-radius:10px; border-color:white; border-width:5px; position:absolute;
+}
+
+#form { background-color:black; width:400px; margin-left:800px; margin-right:0px; margin-top:-30px; position:absolute;
+}
+
+#form h4{ margin-left:15px;
+}
+
+#form textarea { background-color:rgb(206, 232, 255); width:400px; margin-left:800px; margin-right:0px; height:150px; border-radius:10px;
+}
+
+#form button { background-color:white; margin-left:0px; cursor: grab;
+}
+
 html,
 body {
   height: 100vh;
