@@ -316,7 +316,14 @@ main {
     gap: 10px;
     align-items: center;
 }
-.adventure-item, .destination-item1, .destination-item2, .destination-item3, .destination-item4, .destination-item5, .destination-item6, .destination-item7 {
+.adventure-item,
+.destination-item1,
+.destination-item2,
+.destination-item3, 
+.destination-item4, 
+.destination-item5, 
+.destination-item6, 
+.destination-item7 {
     position: relative;
     height: 200px;
     width: 100%;
@@ -377,8 +384,13 @@ main {
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
-.destination-item1:hover,.destination-item2:hover, .destination-item3:hover, 
-.destination-item4:hover, .destination-item5:hover, .destination-item6:hover, .destination-item7:hover{
+.destination-item1:hover,
+.destination-item2:hover, 
+.destination-item3:hover, 
+.destination-item4:hover, 
+.destination-item5:hover, 
+.destination-item6:hover, 
+.destination-item7:hover{
     transform: scale(1.05);
     opacity: 0.9;
 }
