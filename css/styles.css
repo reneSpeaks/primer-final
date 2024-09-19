@@ -431,24 +431,29 @@ main {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.Winner h5{
   text-align: center;
   word-spacing: 5px;
+}
+.Winner h5{
   padding: 5px;
   font-weight: 500;
 }
 .Winner h4{
   text-align: center;
-  word-spacing: 5px;
+}
+.Winner h2{
+  text-align: center;
+  padding: 5px;
 }
 .Winner button{
   background-color: var(--tertiaryColor);
   color: var(--lightBackgroundColor);
   border-radius: 25PX;
-  padding: 10px;
-  text-align: center;
-  align-items: center;
+  padding: 5px 20px;
+  margin: 15px 0px 700px;
+  display: inline-block;
+  font-size: 12px;
+  border: none;
 }
 .Winner-Logo{
 display: flex;
