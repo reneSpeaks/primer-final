@@ -247,6 +247,8 @@ nav .search-field label {
 }
 main {
   margin-bottom: 10px;
+  background: rgb(226,231,237);
+  background: linear-gradient(180deg, rgba(226,231,237,1) 0%, rgba(212,225,234,1) 100%);
 }
 
 #hero {
@@ -423,23 +425,50 @@ main {
     width: 100%; 
     height: 100%; 
 }
+.Winner{
+  background-image: url(../img/big.jpg);
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Winner h5{
+  text-align: center;
+  word-spacing: 5px;
+  padding: 5px;
+  font-weight: 500;
+}
+.Winner h4{
+  text-align: center;
+  word-spacing: 5px;
+}
+.Winner button{
+  background-color: var(--tertiaryColor);
+  color: var(--lightBackgroundColor);
+  border-radius: 25PX;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
 .Winner-Logo{
 display: flex;
-justify-content: space-around;
+justify-content: center;
+gap: 30px;
 }
 .Winner-Logo div{
   width: 80px;
   height: 80px;
   background-size: cover;
+  margin: 10px 0px 20px;
 }
 .Winner-Logo .logo1{
-  background-image: url(../img/2019.jpg);
+  background-image: url(../img/Top2024.png);
 }
 .Winner-Logo .logo2{
-  background-image: url(../img/Top-Travel-Specialists-US-Logo-2024.png);
+  background-image: url(../img/best2021.png);
 }
 .Winner-Logo .logo3{
-  background-image: url(../img/travel-best-awards-2018.png);
+  background-image: url(../img/best-winner.png);
 }
 .Winner-Logo .logo4{
   background-image: url(../img/2022-winners-shield-M.png);
