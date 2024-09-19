@@ -15,30 +15,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-#footerbcg {display:block; width:100%; height:400px; background-color:black; margin-left:0px; margin-bottom:0px;
-}
-
-#footer {width:1200px; height:400px; background-color:black; display:block;color:white; margin-left:auto; margin-right:auto; margin-top:50px; position:relevant;
-}
-
-#footer p {position:absolute; display:block; margin-left:280px; text-align:center; margin-top:290px; 
-}
-
-#footer img { width:250px; height:167px; border-radius:10px; border-color:white; border-width:5px; position:absolute;
-}
-
-#form { background-color:black; width:400px; margin-left:800px; margin-right:0px; margin-top:-30px; position:absolute;
-}
-
-#form h4{ margin-left:15px;
-}
-
-#form textarea { background-color:rgb(206, 232, 255); width:400px; margin-left:800px; margin-right:0px; height:150px; border-radius:10px;
-}
-
-#form button { background-color:white; margin-left:0px; cursor: grab;
-}
-
 html,
 body {
   height: 100vh;
@@ -446,4 +422,37 @@ justify-content: space-around;
 }
 .Winner-Logo .logo5{
   background-image: url(../img/50-Tours-2013-logo-web.png);
+}
+
+
+
+#footerbcg {display:block; width:100%; height:400px; background-color:black; margin-left:0px; margin-bottom:0px;
+}
+
+#footer {width:1200px; height:400px; background-color:black; display:block;color:white; margin-left:auto; margin-right:auto; margin-top:50px; position:relevant;
+}
+
+#posl {position:absolute; margin-left: 490px; margin-top:50px; font-size:25px; list-style-type: none; text-align:center; line-height:60px;
+}
+
+
+#posl a {color:white; text-decoration:none;
+}
+
+#posl a:hover {color:white; text-decoration:underline;
+}
+
+#footer p {position:absolute; display:block; margin-left:280px; text-align:center; margin-top:290px; 
+}
+
+#footer img { width:250px; height:167px; border-radius:10px; border-color:white; border-width:5px; position:absolute;
+}
+
+#form { background-color:black; width:400px; margin-left:880px; margin-right:0px; margin-top:-30px; position:absolute; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#form textarea { background-color:rgb(206, 232, 255); width:400px;  height:150px; border-radius:10px;
+}
+
+#form button { background-color:white; margin-left:0px; cursor: grab;  font-family: Poppins, sans-serif;
 }
