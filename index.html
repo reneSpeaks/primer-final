@@ -1,33 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Primer Final</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- FONT AWESOME ICONS LINK INCLUDE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <nav>
+                    <div class="quicklinks">
+                        <a href="tel:+"><i class="fa-solid fa-phone"></i> +49 800 ARTINIA</a>
+                    </div>
 
-    <title>Primer Final</title>
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-mountain-sun"></i> Artinia<span> Adventures</span>
+                    </a>
 
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div id="footerbcg">
-    <div id="footer">
-      <a href="https://www.facebook.com" target="new" style="display:block;margin-top:30px;"><img src="bt1.png" alt="Fb" style="height:60px; width:60px;margin-top:30px;"></a>
-      <img  src="bt2.jpg" alt="Phone" style="height:60px; width:60px; margin-left:90px; margin-top:30px;">
-      <h4 display="block" position="absolute" style="margin-left:170px; padding-top:40px; font-size:30px; color:white; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">+49 123 478 123</h4>
-      <div id="form">
-      <h3 style="margin-top:-10px; margin-bottom:10px;">Please contact us to realise your plans</h3>
-      <h4>Your email address:</h4>
-      <textarea style="margin-left:0px;width:300px;height:30px;resize:none">  </textarea>
-      <h4>Your plans:</h4>
-        <textarea style="margin-left:0px;width:300px;height:150px;resize:none" placeholder="Your ideas..." >  </textarea>
-        <button type="button" id="sbm">Submit</button>
-      </div>
-      <img src="urlaub.jpg" alt="Holiday" title="" style="margin-top:70px; margin-left:50px;">
-      <p>©2024MakeYourDreamsComeTrue. All rights reserved. Website done by DBSteam.
-        </p>
-      </div>
-    </div>
-    
-      
-  </body>
+                    <ul>
+                        <li><a href="#">DESTINATIONS</a></li>
+                        <li>|</li>
+                        <li><a href="#">ADVENTURES</a></li>
+                        <li>|</li>
+                        <li><a href="#">PLANS</a></li>
+                    </ul>
+
+                    <div class="search-field">
+                        <input type="search" id="search" name="search" minlength="4" />
+                        <label for="search">Search</label>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="carousel">
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="slide-btn-1"
+                        class="class-btn"
+                        onclick="setSlide();"
+                        checked />
+                    <input type="radio" name="carousel" id="slide-btn-2" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-3" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-4" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-5" class="class-btn" onclick="setSlide();" />
+
+                    <div class="slide one parallax-effect">
+                        <h1>Guiding Life's<br />Greatest Adventures</h1>
+                    </div>
+                    <div class="slide two parallax-effect">
+                        <h1>Find Your Bliss<br />in Solo Exploration</h1>
+                    </div>
+                    <div class="slide three parallax-effect">
+                        <h1>Chart Your<br />Own Course</h1>
+                    </div>
+                    <div class="slide four parallax-effect">
+                        <h1>Adventure<br />Begins Here</h1>
+                    </div>
+                    <div class="slide five parallax-effect">
+                        <h1>Let us be your<br />passport to the world.</h1>
+                    </div>
+
+                    <div class="labels">
+                        <label for="slide-btn-1"></label>
+                        <label for="slide-btn-2"></label>
+                        <label for="slide-btn-3"></label>
+                        <label for="slide-btn-4"></label>
+                        <label for="slide-btn-5"></label>
+                    </div>
+                </div>
+            </section>
+            <section id="trip-advisor">
+                <div class="hr-wrapper">
+                    <hr />
+                    <h3>Find Your Adventure</h3>
+                    <hr />
+                </div>
+                <div class="advisor-wrapper">
+                    <select name="activities" id="activities">
+                        <option value="" disabled selected>Activities</option>
+                        <option value="act-1">Rafting</option>
+                        <option value="act-2">Hiking</option>
+                        <option value="act-3">Skiing</option>
+                        <option value="act-4">Sightseeing</option>
+                        <option value="act-5">Culture Deep Dive</option>
+                    </select>
+                    <select name="destinations" id="destinations">
+                        <option value="" disabled selected>Destinations</option>
+                        <option value="dest-1">Mediteranian</option>
+                        <option value="dest-2">Scandinavian</option>
+                        <option value="dest-3">Caribic</option>
+                        <option value="dest-4">Highlands</option>
+                        <option value="dest-5">Exotic</option>
+                    </select>
+                    <select name="duration" id="duration">
+                        <option value="dur-1">1 Week</option>
+                        <option value="dur-2">2 Weeks</option>
+                        <option value="dur-3">3 Weeks</option>
+                        <option value="dur-4">4 Weeks</option>
+                    </select>
+                    <button>View Trips</button>
+                </div>
+                <div class="hr-wrapper">
+                    <hr />
+                    <p><em>75 Trips Meet Your Criteria</em></p>
+                    <hr />
+                </div>
+            </section>
+        </main>
+        <div id="footerbcg">
+          <div id="footer">
+            <a href="https://www.facebook.com" target="new" style="display:block;margin-top:30px;"><img src="bt1.png" alt="Fb" style="height:60px; width:60px;margin-top:30px;"></a>
+            <img  src="bt2.jpg" alt="Phone" style="height:60px; width:60px; margin-left:90px; margin-top:30px;">
+            <h4 display="block" position="absolute" style="margin-left:170px; padding-top:40px; font-size:30px; color:white; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">+49 123 478 123</h4>
+            <div id="form">
+            <h3 style="margin-top:-10px; margin-bottom:10px;">Please contact us to realise your plans</h3>
+            <h4>Your email address:</h4>
+            <textarea style="margin-left:0px;width:300px;height:30px;resize:none">  </textarea>
+            <h4>Your plans:</h4>
+              <textarea style="margin-left:0px;width:300px;height:150px;resize:none" placeholder="Your ideas..." >  </textarea>
+              <button type="button" id="sbm">Submit</button>
+            </div>
+            <img src="urlaub.jpg" alt="Holiday" title="" style="margin-top:70px; margin-left:50px;">
+            <p>©2024MakeYourDreamsComeTrue. All rights reserved. Website done by DBSteam.
+              </p>
+            </div>
+          </div>
+
+        <script type="text/javascript" src="js/scripts.js" defer></script>
+    </body>
 </html>
