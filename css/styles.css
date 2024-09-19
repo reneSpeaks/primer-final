@@ -175,19 +175,19 @@ nav .search-field label {
   background-size: cover;
 }
 .carousel .one {
-  background-image: url(/img/pexels-ahmad-syahrir-107128-758744.jpg);
+  background-image: url(./../img/pexels-ahmad-syahrir-107128-758744.jpg);
 }
 .carousel .two {
-  background-image: url(/img/pexels-apasaric-1285625.jpg);
+  background-image: url(./../img/pexels-apasaric-1285625.jpg);
 }
 .carousel .three {
-  background-image: url(/img/pexels-chiecharon-913215.jpg);
+  background-image: url(./../img/pexels-chiecharon-913215.jpg);
 }
 .carousel .four {
-  background-image: url(/img/pexels-riciardus-307008.jpg);
+  background-image: url(./../img/pexels-riciardus-307008.jpg);
 }
 .carousel .five {
-  background-image: url(/img/pexels-souvenirpixels-417074.jpg);
+  background-image: url(./../img/pexels-souvenirpixels-417074.jpg);
 }
 .carousel #slide-btn-1:checked ~ .one,
 .carousel #slide-btn-2:checked ~ .two,
@@ -214,6 +214,14 @@ nav .search-field label {
   display: none;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 main {
   height: 100vh;
   height: 100svh;
@@ -223,6 +231,69 @@ main {
   height: 75vh;
   height: 75svh;
   width: 100%;
+}
+
+#trip-advisor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: url(./../img/moroccan-flower.png);
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgb(41, 41, 41);
+  color: #fcfcfc;
+}
+#trip-advisor .hr-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+#trip-advisor .hr-wrapper hr {
+  width: 100%;
+  margin: 0 20px;
+  border-bottom: 1px dashed #fcfcfc;
+}
+#trip-advisor h3 {
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#trip-advisor select {
+  width: 200px;
+  height: 30px;
+  margin: 0 20px;
+  outline: none;
+  border-radius: 15px;
+  border: 2px solid #181818;
+  text-align: center;
+}
+#trip-advisor button {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  border: 2px solid #181818;
+  transition: 0.2s ease;
+}
+#trip-advisor button:hover {
+  background-color: #32a287;
+}
+#trip-advisor p {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 10px;
 }
 .Find{
 background-color: var(--darkBackgroundColor);
