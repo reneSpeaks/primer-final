@@ -174,19 +174,19 @@ nav .search-field label {
   background-size: cover;
 }
 .carousel .one {
-  background-image: url(./../img/pexels-ahmad-syahrir-107128-758744.jpg);
+  background-image: url(https://images.pexels.com/photos/758744/pexels-photo-758744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .carousel .two {
-  background-image: url(./../img/pexels-apasaric-1285625.jpg);
+  background-image: url(https://images.pexels.com/photos/4909108/pexels-photo-4909108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .carousel .three {
-  background-image: url(./../img/pexels-chiecharon-913215.jpg);
+  background-image: url(https://images.pexels.com/photos/1310855/pexels-photo-1310855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .carousel .four {
-  background-image: url(./../img/pexels-riciardus-307008.jpg);
+  background-image: url(https://images.pexels.com/photos/105218/pexels-photo-105218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .carousel .five {
-  background-image: url(./../img/pexels-souvenirpixels-417074.jpg);
+  background-image: url(https://images.pexels.com/photos/913215/pexels-photo-913215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 .carousel #slide-btn-1:checked ~ .one,
 .carousel #slide-btn-2:checked ~ .two,
@@ -239,7 +239,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background: url(./../img/moroccan-flower.png);
+  background: url(https://i.imgur.com/OMZJndD.png);
   background-position: center;
   background-blend-mode: multiply;
   background-color: rgb(41, 41, 41);
