@@ -18,7 +18,7 @@
 #footerbcg {display:block; width:100%; height:400px; background-color:black; margin-left:0px; margin-bottom:0px;
 }
 
-#footer {width:1200px; height:400px; background-color:black; display:block;color:white; margin-left:auto; margin-right:auto; margin-top:800px; position:relevant;
+#footer {width:1200px; height:400px; background-color:black; display:block;color:white; margin-left:auto; margin-right:auto; margin-top:50px; position:relevant;
 }
 
 #footer p {position:absolute; display:block; margin-left:280px; text-align:center; margin-top:290px; 
@@ -246,8 +246,7 @@ nav .search-field label {
   }
 }
 main {
-  height: 100vh;
-  height: 100svh;
+  margin-bottom: 10px;
 }
 
 #hero {
@@ -317,4 +316,134 @@ main {
   max-width: 400px;
   width: 100%;
   margin-top: 10px;
+}
+.Adventures_Destinations{
+    margin: 30px;
+}
+.Adventures_Destinations h3{
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+}
+.Adventures_Destinations h1{
+    text-align: center;
+}
+.Adventures h2, .Destinations h2{
+    text-align: left;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+}
+.adventure-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.adventure-item,
+.destination-item1,
+.destination-item2,
+.destination-item3, 
+.destination-item4, 
+.destination-item5, 
+.destination-item6, 
+.destination-item7 {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 5px;
+    overflow: hidden;
+  }  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--lightBackgroundColor);
+}
+.overlay h2{
+    font-family: "Caveat", cursive;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.overlay h3{
+    font-family: "Caveat", cursive;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.overlay a{
+    color: var(--lightBackgroundColor);
+    text-decoration: none;
+    font-size: 12px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.overlay a:hover{
+    color: var(--lightBackgroundColor);
+    text-decoration: none;
+    font-size: 12px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 20px;
+}
+.overlay:hover a {
+    opacity: 1; 
+    border: 2px solid var(--lightBackgroundColor);
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.destination-item1:hover,
+.destination-item2:hover, 
+.destination-item3:hover, 
+.destination-item4:hover, 
+.destination-item5:hover, 
+.destination-item6:hover, 
+.destination-item7:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.destination-item1 {
+    grid-area: 1 /1 / span 2/ span 2;
+    background-size: cover;
+    width: 100%; 
+    height: 100%; 
+}
+.Winner-Logo{
+display: flex;
+justify-content: space-around;
+}
+.Winner-Logo div{
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+.Winner-Logo .logo1{
+  background-image: url(../img/2019.jpg);
+}
+.Winner-Logo .logo2{
+  background-image: url(../img/Top-Travel-Specialists-US-Logo-2024.png);
+}
+.Winner-Logo .logo3{
+  background-image: url(../img/travel-best-awards-2018.png);
+}
+.Winner-Logo .logo4{
+  background-image: url(../img/2022-winners-shield-M.png);
+}
+.Winner-Logo .logo5{
+  background-image: url(../img/50-Tours-2013-logo-web.png);
 }
