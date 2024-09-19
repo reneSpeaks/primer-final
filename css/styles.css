@@ -295,45 +295,6 @@ main {
   width: 100%;
   margin-top: 10px;
 }
-.Find{
-background-color: var(--darkBackgroundColor);
-padding: 30px;
-}
-.dropdown-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    margin: 20px;
-}
-legend{
-  text-align: center;
-  color: var(--lightBackgroundColor);
-}
-select {
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 150px;
-    background-color: var(--primaryColor);
-    color: var(--lightBackgroundColor);
-}
-button {
-    padding: 10px 20px;
-    background-color: var(--secondarycolor);
-    color: var(--lightBackgroundColor);
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-button:hover {
-    background-color:var(--secondarycolor);
-}
-
 .Adventures_Destinations{
     margin: 30px;
 }
